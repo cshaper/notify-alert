@@ -1,10 +1,21 @@
 import React from 'react'
 
-import { ExampleComponent } from 'react-notify-alert'
+import { ReactNotifyAlert } from 'react-notify-alert'
 import 'react-notify-alert/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <ReactNotifyAlert
+    isOpen={true}
+    type="confirm"
+    title="Sure ?"
+    titleClassName={null}
+    infoText="Are you sure to remove this card ?"
+    infoClassName={null}
+    titleImage={null}
+    requestAllowBtnText={null}
+    requestAllowBtnClassName={null}
+    requestCancelBtnText={null}
+    requestCancelBtnClassName={null} />
 }
 
 export default App

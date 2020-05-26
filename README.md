@@ -15,14 +15,21 @@ npm install --save react-notify-alert
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-notify-alert'
+import { ReactNotifyAlert } from 'react-notify-alert'
 import 'react-notify-alert/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
+<ReactNotifyAlert
+    isOpen={true}
+    type="confirm"
+    title="Sure ?"
+    titleClassName={null}
+    infoText="Are you sure to remove this card ?"
+    infoClassName={null}
+    titleImage={null}
+    requestAllowBtnText={null}
+    requestAllowBtnClassName={null}
+    requestCancelBtnText={null}
+    requestCancelBtnClassName={null} />
 ```
 
 ## License
