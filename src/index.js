@@ -66,7 +66,7 @@ export function ReactNotifyAlert(props) {
   return ReactDOM
     .createPortal(
       <NotifyAlert {...props} />,
-      document.querySelector("#root")
+      document.querySelectorAll("body")[0]
     );
 }
 

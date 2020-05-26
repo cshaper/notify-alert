@@ -4,6 +4,9 @@ import 'react-notify-alert/dist/index.css'
 
 const App = () => {
   return (
+    <div>
+      <div>
+      <div>1212</div>
       <ReactNotifyAlert
         isOpen={true}
         type="confirm"
@@ -17,7 +20,7 @@ const App = () => {
         requestCancelBtnText={null}
         requestCancelBtnClassName={null}
       // onActionHandle={(e) => this.onActionHandle(e) }
-      />)
+      /></div></div>)
     }
 
 export default App
