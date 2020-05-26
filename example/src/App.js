@@ -15,7 +15,9 @@ const App = () => {
     requestAllowBtnText={null}
     requestAllowBtnClassName={null}
     requestCancelBtnText={null}
-    requestCancelBtnClassName={null} />
+    requestCancelBtnClassName={null}
+    // onActionHandle={() => this.onActionHandle() }
+     />
 }
 
 export default App

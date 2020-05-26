@@ -20,7 +20,7 @@ import 'react-notify-alert/dist/index.css'
 
 <ReactNotifyAlert
     isOpen={true}
-    type="confirm"
+    type={"confirm" || "fail" || "success"}
     title="Sure ?"
     titleClassName={null}
     infoText="Are you sure to remove this card ?"
@@ -29,7 +29,10 @@ import 'react-notify-alert/dist/index.css'
     requestAllowBtnText={null}
     requestAllowBtnClassName={null}
     requestCancelBtnText={null}
-    requestCancelBtnClassName={null} />
+    requestCancelBtnClassName={null}
+    onActionHandle={() => this.onActionHandle() } />
+
+
 ```
 
 ## License
