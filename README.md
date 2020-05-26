@@ -30,7 +30,7 @@ import 'react-notify-alert/dist/index.css'
     requestAllowBtnClassName={null}
     requestCancelBtnText={null}
     requestCancelBtnClassName={null}
-    onActionHandle={() => this.onActionHandle() } />
+    onActionHandle={(e) => this.onActionHandle(e) } />
 
 
 ```

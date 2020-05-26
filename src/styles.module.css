@@ -18,14 +18,16 @@
 
 .notifyAlertTitleTextStyle {
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 700;
+  font-family: sans-serif !important;
 }
 
 /* Content */
 .notifyAlertContent {
   padding: 0 15px;
   font-size: 14px;    
-  text-align: center;
+  text-align: center;  
+  font-family: sans-serif !important;
 }
 
 .notifyAlertActions {
@@ -48,6 +50,7 @@
   cursor: pointer;
   border-radius: 3px;
   z-index: 11;
+  font-family: sans-serif !important;
 }
 .notifyAlertActionsRequestBtn:hover{
   opacity: 1;
@@ -66,6 +69,7 @@
   cursor: pointer;
   border-radius: 3px;
   z-index: 11;
+  font-family: sans-serif !important;
 }
 .notifyAlertActionsRequestCancelBtn:hover {
   opacity: 1;
@@ -85,7 +89,8 @@
   top: 0;
   left: 0;
   transform: scale(0);
-  z-index: 1;
+  z-index: 99999;
+  font-family: sans-serif !important;
 }
 
 .NotifyAlertlContainer.six {
@@ -131,16 +136,15 @@
 }
 .NotifyAlertlContainer .NotifyAlertlBackground .NotifyAlertMain {
   background: white;
-  padding: 25px;
+  padding: 15px 10px;
   display: inline-block;
-  border-radius: 3px;
+  border-radius: 10px;
   font-weight: 300;
   position: relative;
 }
 .NotifyAlertlContainer .NotifyAlertlBackground .NotifyAlertMain .h2 {
   font-size: 25px;
   line-height: 25px;
-  margin-bottom: 15px;
 }
 .NotifyAlertlContainer .NotifyAlertlBackground .NotifyAlertMain .p {
   font-size: 18px;
@@ -152,7 +156,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  border-radius: 3px;
+  border-radius: 10px;
 }
 .NotifyAlertlContainer .NotifyAlertlBackground .NotifyAlertMain .modalSvg .modalRect {
   stroke: #fff;
