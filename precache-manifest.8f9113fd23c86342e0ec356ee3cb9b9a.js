@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e1af68f1d01c8177a1d2fa33666b7ece",
+    "revision": "ec7593327ac62b520710b8fae791d543",
     "url": "/react-notify-alert/index.html"
   },
   {
-    "revision": "34785019fe1dfe68c967",
-    "url": "/react-notify-alert/static/css/main.92ec89f8.chunk.css"
+    "revision": "ee8afb1e5c9ebf08b03c",
+    "url": "/react-notify-alert/static/css/main.cd042641.chunk.css"
   },
   {
     "revision": "ec12f7fdf06c665346e7",
@@ -16,8 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-notify-alert/static/js/2.9655c4c8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "34785019fe1dfe68c967",
-    "url": "/react-notify-alert/static/js/main.61135f26.chunk.js"
+    "revision": "ee8afb1e5c9ebf08b03c",
+    "url": "/react-notify-alert/static/js/main.75cdef53.chunk.js"
+  },
+  {
+    "revision": "59bd054f3bde6b0e219b610549d13f6f",
+    "url": "/react-notify-alert/static/js/main.75cdef53.chunk.js.LICENSE.txt"
   },
   {
     "revision": "9cf4bb10d1d38fbf1cd0",
