@@ -8,7 +8,7 @@ const App = () => {
       <div>
       <div>1212</div>
       <ReactNotifyAlert
-        isOpen={true}
+        isOpen={false}
         type="confirm"
         title="Sure ?"
         titleClassName={null}
