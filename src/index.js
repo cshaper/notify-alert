@@ -6,7 +6,6 @@ import styles from './styles.module.css'
 import ReactDOM from 'react-dom';
 
 const NotifyAlert = (props) => {
-  debugger;
   let { isOpen,
     type,
     title,
