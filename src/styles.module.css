@@ -144,6 +144,7 @@
   border-radius: 10px;
   font-weight: 300;
   position: relative;
+  max-width: 450px;
 }
 .NotifyAlertlContainer .NotifyAlertlBackground .NotifyAlertMain .h2 {
   font-size: 25px;

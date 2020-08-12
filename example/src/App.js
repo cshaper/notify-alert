@@ -12,7 +12,7 @@ const App = () => {
         type="confirm"
         title="Sure ?"
         titleClassName={null}
-        infoText="Are you sure to remove this card ?"
+        infoText="My open source efforts are now focused on Saasify, and I am not able to invest a significant amount of time into maintaining CRL anymore. I am looking for volunteers who would like to become active maintainers on the project. If you are interested, please shoot me a note."
         infoClassName={null}
         titleImage={null}
         requestAllowBtnText={null}
