@@ -7,6 +7,7 @@ import ReactDOM from 'react-dom';
 
 const NotifyAlert = (props) => {
   let { isOpen,
+    id,
     type,
     title,
     titleClassName,
@@ -17,7 +18,9 @@ const NotifyAlert = (props) => {
     requestAllowBtnText,
     requestCancelBtnText,
     requestAllowBtnClassName,
-    requestCancelBtnClassName } = props
+    requestCancelBtnClassName,
+    mainClassName
+   } = props
   let titleIcon = SuccessIcon;
   if (type === "confirm") {
     titleIcon = ConfirmationIcon;
@@ -31,20 +34,20 @@ const NotifyAlert = (props) => {
   return (
     <React.Fragment>
       {isOpen &&
-        <div className={!isOpen ? styles.out + " " + styles.NotifyAlertlContainer + " " + styles.six  : styles.NotifyAlertlContainer + " " + styles.six}>
-          <div className={styles.NotifyAlertlBackground}>
-            <div className={styles.NotifyAlertMain}>
-              <div className={styles.notifyAlertTitle + " " + titleClassName + " " + styles.h2}>
+        <div id={id ? id :"NotifyAlert"} className={!isOpen ? styles.out + " " + styles.NotifyAlertlContainer + " " + styles.six + " "+ "notify-alert-main"  : styles.NotifyAlertlContainer + " " + styles.six + " "+ "notify-alert-main" }>
+          <div className={styles.NotifyAlertlBackground + " "+ "notify-alert-bg"}>
+            <div className={styles.NotifyAlertMain + " " +mainClassName +" " +"notify-alert-main"}>
+              <div className={styles.notifyAlertTitle + " " + titleClassName + " " + styles.h2 + " " + "notify-alert-header"}>
                 <div className={styles.notifyAlertTitleIconStyle}>
                   <img src={titleImage ? titleImage : titleIcon} alt="icon not found" className={styles.notifyAlertTitleIconStyleImg} />
                 </div>
                 <div className={styles.notifyAlertTitleTextStyle}>{title && title !== "" ? title : "Alert Title"}</div>
               </div>
-              <div className={styles.notifyAlertContent + " " + infoClassName + " " + styles.p}>
+              <div className={styles.notifyAlertContent + " " + infoClassName + " " + styles.p + " " + "notify-alert-body"} >
                 {infoText && infoText !== "" ? infoText :
                   "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis deserunt corrupti,ut fugit magni qui quasi nisi amet repellendus non fuga omnis a sed impedit explicabo   accusantium nihil doloremque consequuntur."}
               </div>
-              <div className={styles.notifyAlertActions + " " + styles.p}>
+              <div className={styles.notifyAlertActions + " " + styles.p + " " +"notify-alert-action"}>
                 <button className={styles.notifyAlertActionsRequestBtn + " " + requestAllowBtnClassName} onClick={() => onActionHandle ? onActionHandle(true) : null} >
                   {requestAllowBtnText ? requestAllowBtnText : "OK"}
                 </button>

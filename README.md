@@ -17,20 +17,22 @@ import React, { Component } from 'react'
 
 import { ReactNotifyAlert } from 'react-notify-alert'
 import 'react-notify-alert/dist/index.css'
-
-<ReactNotifyAlert
-    isOpen={true}
-    type={"confirm" || "fail" || "success"}
-    title="Sure ?"
-    titleClassName={null}
-    infoText="Are you sure to remove this card ?"
-    infoClassName={null}
-    titleImage={null}
-    requestAllowBtnText={null}
-    requestAllowBtnClassName={null}
-    requestCancelBtnText={null}
-    requestCancelBtnClassName={null}
-    onActionHandle={(e) => this.onActionHandle(e) } />
+    <ReactNotifyAlert      
+        isOpen={true}
+        id="NotifyAlert"
+        type={"confirm" || "fail" || "success"}
+        title="Sure ?"
+        mainClassName="alert-main"
+        titleClassName={null}
+        infoText="Are you sure to remove this card ?"
+        infoClassName={null}
+        titleImage={null}
+        requestAllowBtnText={null}
+        requestAllowBtnClassName={null}
+        requestCancelBtnText={null}
+        requestCancelBtnClassName={null}
+        onActionHandle={(e) => this.onActionHandle(e) }
+      />
 
 
 ```

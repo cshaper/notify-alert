@@ -7,10 +7,12 @@ const App = () => {
     <div>
       <div>
       <div>1212</div>
-      <ReactNotifyAlert
-        isOpen={false}
+      <ReactNotifyAlert      
+        isOpen={true}
+        id="NotifyAlert"
         type="confirm"
         title="Sure ?"
+        mainClassName="alert-main"
         titleClassName={null}
         infoText="My open source efforts are now focused on Saasify, and I am not able to invest a significant amount of time into maintaining CRL anymore. I am looking for volunteers who would like to become active maintainers on the project. If you are interested, please shoot me a note."
         infoClassName={null}
@@ -19,7 +21,7 @@ const App = () => {
         requestAllowBtnClassName={null}
         requestCancelBtnText={null}
         requestCancelBtnClassName={null}
-      // onActionHandle={(e) => this.onActionHandle(e) }
+        onActionHandle={(e) => this.onActionHandle(e) }
       /></div></div>)
     }
 
