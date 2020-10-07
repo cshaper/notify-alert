@@ -1,9 +1,9 @@
 import React from 'react'
-import SuccessIcon from "./assets/img/success-icon.png";
-import FailedIcon from "./assets/img/fail-icon.png";
-import ConfirmationIcon from "./assets/img/confirmation-icon.png";
+import SuccessIcon from './assets/img/success-icon.png'
+import FailedIcon from './assets/img/fail-icon.png'
+import ConfirmationIcon from './assets/img/confirmation-icon.png'
 import styles from './styles.module.css'
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom'
 
 const NotifyAlert = (props) => {
   let { isOpen,
@@ -27,9 +27,8 @@ const NotifyAlert = (props) => {
   }
   else if (type === "fail") {
     titleIcon = FailedIcon
-  }
-  else {
-    titleIcon = SuccessIcon;
+  } else {
+    titleIcon = SuccessIcon
   }
   return (
     <React.Fragment>
@@ -39,9 +38,15 @@ const NotifyAlert = (props) => {
             <div className={styles.NotifyAlertMain + " " +mainClassName +" " +"notify-alert-main"}>
               <div className={styles.notifyAlertTitle + " " + titleClassName + " " + styles.h2 + " " + "notify-alert-header"}>
                 <div className={styles.notifyAlertTitleIconStyle}>
-                  <img src={titleImage ? titleImage : titleIcon} alt="icon not found" className={styles.notifyAlertTitleIconStyleImg} />
+                  <img
+                    src={titleImage ? titleImage : titleIcon}
+                    alt='icon not found'
+                    className={styles.notifyAlertTitleIconStyleImg}
+                  />
                 </div>
-                <div className={styles.notifyAlertTitleTextStyle}>{title && title !== "" ? title : "Alert Title"}</div>
+                <div className={styles.notifyAlertTitleTextStyle}>
+                  {title && title !== '' ? title : ''}
+                </div>
               </div>
               <div className={styles.notifyAlertContent + " " + infoClassName + " " + styles.p + " " + "notify-alert-body"} >
                 {infoText && infoText !== "" ? infoText :
@@ -51,12 +56,38 @@ const NotifyAlert = (props) => {
                 <button className={styles.notifyAlertActionsRequestBtn + " " + requestAllowBtnClassName} onClick={() => onActionHandle ? onActionHandle(true) : null} >
                   {requestAllowBtnText ? requestAllowBtnText : "OK"}
                 </button>
-                {type === "confirm" && <button className={styles.notifyAlertActionsRequestCancelBtn + " " + requestCancelBtnClassName} onClick={() => onActionHandle ? onActionHandle(false) : null} >
-                  {requestCancelBtnText ? requestCancelBtnText : "CANCEL"}
-                </button>}
+                {type === 'confirm' && (
+                  <button
+                    className={
+                      styles.notifyAlertActionsRequestCancelBtn +
+                      ' ' +
+                      requestCancelBtnClassName
+                    }
+                    onClick={() =>
+                      onActionHandle ? onActionHandle(false) : null
+                    }
+                  >
+                    {requestCancelBtnText ? requestCancelBtnText : 'CANCEL'}
+                  </button>
+                )}
               </div>
-              <svg className={styles.modalSvg} xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
-                <rect className={styles.modalRect} x="0" y="0" fill="none" width="100%" height="100%" rx="10" ry="10"></rect>
+              <svg
+                className={styles.modalSvg}
+                xmlns='http://www.w3.org/2000/svg'
+                width='100%'
+                height='100%'
+                preserveAspectRatio='none'
+              >
+                <rect
+                  className={styles.modalRect}
+                  x='0'
+                  y='0'
+                  fill='none'
+                  width='100%'
+                  height='100%'
+                  rx='10'
+                  ry='10'
+                ></rect>
               </svg>
             </div>
           </div>
@@ -67,11 +98,8 @@ const NotifyAlert = (props) => {
 }
 
 export function ReactNotifyAlert(props) {
-  return ReactDOM
-    .createPortal(
-      <NotifyAlert {...props} />,
-      document.querySelectorAll("body")[0]
-    );
+  return ReactDOM.createPortal(
+    <NotifyAlert {...props} />,
+    document.querySelectorAll('body')[0]
+  )
 }
-
-
